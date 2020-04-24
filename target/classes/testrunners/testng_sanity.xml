@@ -2,7 +2,7 @@
 
 <suite name="Sanity_HubSpot_TestSuite" verbose="1">
 
-	<test name="Sanity_TestCases">
+	<test name="Sanity_Test_Cases">
 		<classes>
 			<class name="com.qa.hubspot.test.LoginPageTest" />
 		</classes>
