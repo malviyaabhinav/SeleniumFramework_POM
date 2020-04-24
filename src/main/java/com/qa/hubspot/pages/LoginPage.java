@@ -30,7 +30,7 @@ public class LoginPage extends BasePage{
 		this.driver=driver;
 	}
 	
-	// 3. Define Page Actions
+	// 3. Define all Page Actions here
 	
 	public String getTitle() {
 		return driver.getTitle();
