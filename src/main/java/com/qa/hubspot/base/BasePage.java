@@ -28,11 +28,11 @@ public class BasePage {
 	public WebDriver driverInitialization() {
 		String browser = prop.getProperty("browser");
 		String url = prop.getProperty("url");
-		if (browser.equals("chrome")) {
+		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
-		else if (browser.equals("firefox")) {
+		else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} 
@@ -57,7 +57,7 @@ public class BasePage {
 	 * This method reads properties from configuration file.
 	 * @return
 	 */
-	public  Properties propertiesRead() {
+	public Properties propertiesRead() {
 		prop=new Properties();
 		try {
 			FileInputStream ip = new FileInputStream("D:\\OneDrive - Infosys Limited\\Eclipse_Workspace\\SeleniumPOMFramework\\src\\main\\java\\com\\qa\\config\\config.properties");

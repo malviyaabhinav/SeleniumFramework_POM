@@ -36,10 +36,18 @@ public class LoginPage extends BasePage{
 		return driver.getTitle();
 	}
 	
-	public void doLogin(String username, String password) {
+	public HomePage doLogin(String username, String password) {
 		driver.findElement(email).sendKeys(username);
 		driver.findElement(passwordfield).sendKeys(password);
 		driver.findElement(loginButton).click();
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return new HomePage(driver);
+		
 	}
 	
 	public void forgotPassword() {

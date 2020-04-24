@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Sanity_HubSpot_TestSuite" verbose="1">
+
+	<test name="Sanity_TestCases">
+		<classes>
+			<class name="com.qa.hubspot.test.LoginPageTest" />
+		</classes>
+	</test>
+</suite>
