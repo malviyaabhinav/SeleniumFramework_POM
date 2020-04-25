@@ -15,6 +15,7 @@ public class HomePage extends BasePage {
 	By header = By.xpath("//h1[@class='private-header__heading private-header__heading--solo']//child::i18n-string");
 	By accountName = By.xpath("//h5[@class='Heading-sc-9dtc71-0 H5-sc-1o270om-0 jaYosH']//span[2]");
 	By accountMenu = By.xpath("//a[@id='account-menu']");
+	By profileLink =By.xpath("//div[@class='user-info-preferences']");
 
 	// 2. Constructor
 	public HomePage(WebDriver driver) {
@@ -44,5 +45,26 @@ public class HomePage extends BasePage {
 			e.printStackTrace();
 		}
 	}
+	
+	public ProfilePage goToProfilePage() {
+		driver.findElement(accountMenu).click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(profileLink).click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return new ProfilePage(driver);
+	}
+
+	
 
 }

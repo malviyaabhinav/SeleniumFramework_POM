@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 24 22:06:11 CEST 2020</td>
+<td>Started on:</td><td>Sat Apr 25 18:12:24 CEST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>84 seconds (84814 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31642 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.test.HomePageTest.validateAccountName()'><b>validateAccountName</b><br>Test class: com.qa.hubspot.test.HomePageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Malviya] but found [Abhinav]
+<td title='com.qa.hubspot.test.ProfilePageTest.validatePhoneNumber()'><b>validatePhoneNumber</b><br>Test class: com.qa.hubspot.test.ProfilePageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [+31619368780] but found [+31619368782]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at com.qa.hubspot.test.HomePageTest.validateAccountName(HomePageTest.java:49)
+	at com.qa.hubspot.test.ProfilePageTest.validatePhoneNumber(ProfilePageTest.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,7 +95,7 @@ function toggleAllBoxes() {
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at org.testng.TestRunner$$Lambda$51.00000000130A2950.accept(Unknown Source)
+	at org.testng.TestRunner$$Lambda$256.0000000002AE6A50.accept(Unknown Source)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 	at org.testng.TestRunner.privateRun(TestRunner.java:766)
 	at org.testng.TestRunner.run(TestRunner.java:587)
@@ -112,14 +112,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace919263416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace919263416'><pre>java.lang.AssertionError: expected [Malviya] but found [Abhinav]
+</pre></div><a href='#' onClick='toggleBox("stack-trace-655063505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace-655063505'><pre>java.lang.AssertionError: expected [+31619368780] but found [+31619368782]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at com.qa.hubspot.test.HomePageTest.validateAccountName(HomePageTest.java:49)
+	at com.qa.hubspot.test.ProfilePageTest.validatePhoneNumber(ProfilePageTest.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,7 +132,7 @@ function toggleAllBoxes() {
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at org.testng.TestRunner$$Lambda$51.00000000130A2950.accept(Unknown Source)
+	at org.testng.TestRunner$$Lambda$256.0000000002AE6A50.accept(Unknown Source)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 	at org.testng.TestRunner.privateRun(TestRunner.java:766)
 	at org.testng.TestRunner.run(TestRunner.java:587)
@@ -151,7 +151,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.test.HomePageTest@189f73a7</td></tr>
+<td>com.qa.hubspot.test.ProfilePageTest@464efad9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,20 +161,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.hubspot.test.HomePageTest.validateAccountMenuExpand()'><b>validateAccountMenuExpand</b><br>Test class: com.qa.hubspot.test.HomePageTest</td>
-<td></td>
-<td>4</td>
-<td>com.qa.hubspot.test.HomePageTest@189f73a7</td></tr>
-<tr>
-<td title='com.qa.hubspot.test.HomePageTest.validateAccountNameIsDisplayed()'><b>validateAccountNameIsDisplayed</b><br>Test class: com.qa.hubspot.test.HomePageTest</td>
+<td title='com.qa.hubspot.test.ProfilePageTest.validateLanguage()'><b>validateLanguage</b><br>Test class: com.qa.hubspot.test.ProfilePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.test.HomePageTest@189f73a7</td></tr>
+<td>com.qa.hubspot.test.ProfilePageTest@464efad9</td></tr>
 <tr>
-<td title='com.qa.hubspot.test.HomePageTest.validateTitle()'><b>validateTitle</b><br>Test class: com.qa.hubspot.test.HomePageTest</td>
+<td title='com.qa.hubspot.test.ProfilePageTest.validatePageHeader()'><b>validatePageHeader</b><br>Test class: com.qa.hubspot.test.ProfilePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.test.HomePageTest@189f73a7</td></tr>
+<td>com.qa.hubspot.test.ProfilePageTest@464efad9</td></tr>
+<tr>
+<td title='com.qa.hubspot.test.ProfilePageTest.validateProfileName()'><b>validateProfileName</b><br>Test class: com.qa.hubspot.test.ProfilePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.hubspot.test.ProfilePageTest@464efad9</td></tr>
+<tr>
+<td title='com.qa.hubspot.test.ProfilePageTest.validateTimeZone()'><b>validateTimeZone</b><br>Test class: com.qa.hubspot.test.ProfilePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.hubspot.test.ProfilePageTest@464efad9</td></tr>
+<tr>
+<td title='com.qa.hubspot.test.ProfilePageTest.validateTitle()'><b>validateTitle</b><br>Test class: com.qa.hubspot.test.ProfilePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.hubspot.test.ProfilePageTest@464efad9</td></tr>
 </table><p>
 </body>
 </html>

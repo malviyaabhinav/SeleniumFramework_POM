@@ -4,8 +4,9 @@
 
 	<test name="HubSpot_Regression_Test_Cases">
 		<classes>
-			<class name="com.qa.hubspot.test.HomePageTest" />
 			<class name="com.qa.hubspot.test.LoginPageTest" />
+			<class name="com.qa.hubspot.test.HomePageTest" />
+			<class name="com.qa.hubspot.test.ProfilePageTest" />
 		</classes>
 	</test>
 </suite>
