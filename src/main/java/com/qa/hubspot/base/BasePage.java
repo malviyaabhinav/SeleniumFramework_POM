@@ -11,19 +11,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
- * This class is for Base page 
+ * This class is for Base page
+ * 
  * @author Abhinav_Kumar19
  *
  */
 public class BasePage {
 
-	 WebDriver driver;
-	 Properties prop;
+	WebDriver driver;
+	Properties prop;
 
 	/**
 	 * This method returns driver
+	 * 
 	 * @return
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 	public WebDriver driverInitialization() {
 		String browser = prop.getProperty("browser");
@@ -31,49 +33,40 @@ public class BasePage {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		}
-		else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-		} 
-		else{
+		} else {
 			System.out.println("PLease select browser between Chrome and Firefox");
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(url);
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		return driver;
-
 	}
-	
-	
+
 	/**
 	 * This method reads properties from configuration file.
+	 * 
 	 * @return
 	 */
 	public Properties propertiesRead() {
-		prop=new Properties();
+		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("D:\\OneDrive - Infosys Limited\\Eclipse_Workspace\\SeleniumPOMFramework\\src\\main\\java\\com\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream(
+					"D:\\OneDrive - Infosys Limited\\Eclipse_Workspace\\SeleniumPOMFramework\\src\\main\\java\\com\\qa\\config\\config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return prop;
 	}
-	
 
 }

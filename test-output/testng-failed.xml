@@ -3,13 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.hubspot.test.ContactsPageTest">
+      <class name="com.qa.hubspot.test.ProfilePageTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="validateProfileName"/>
+          <include name="validateTimeZone"/>
+          <include name="validateLanguage"/>
+          <include name="validatePhoneNumber"/>
+          <include name="validateTitle"/>
+          <include name="validatePageHeader"/>
           <include name="setUp"/>
-          <include name="createContact"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.hubspot.test.ContactsPageTest -->
+      </class> <!-- com.qa.hubspot.test.ProfilePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

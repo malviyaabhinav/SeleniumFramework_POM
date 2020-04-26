@@ -5,10 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import com.qa.hubspot.base.BasePage;
+import com.qa.util.ElementActions;
 
 public class ContactsPage extends BasePage {
 
 	WebDriver driver;
+	ElementActions elementactions;
 
 	// Object Repository
 	By createContactButton = By.xpath("//span[text()='Create contact']");
@@ -30,46 +32,27 @@ public class ContactsPage extends BasePage {
 	// Constructor
 	public ContactsPage(WebDriver driver) {
 		this.driver = driver;
+		elementactions = new ElementActions(this.driver);
 	}
 
 	// Page Actions
 
 	public void clickOnCreateContact() {
-		driver.findElement(createContactButton).click();
-		try {
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		elementactions.doClick(createContactButton);
 	}
 
 	public String getCreateContactHeaderTitle() {
-		return driver.findElement(createContactPopUpHeader).getText();
+		return elementactions.doGetText(createContactPopUpHeader);
 	}
 
 	public void addContact(String email, String firstname, String lastname, String jobtitle, String phonenumber) {
 		clickOnCreateContact();
-		driver.findElement(emailField).sendKeys(email);
-		try {
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.findElement(firstName).sendKeys(firstname);
-		driver.findElement(lastName).sendKeys(lastname);
-		driver.findElement(jobTitle).sendKeys(jobtitle);
-		driver.findElement(phone).sendKeys(phonenumber);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(submitContactDetails)).click().build().perform();
-
+		elementactions.doSendKeys(emailField, email);
+		elementactions.doSendKeys(firstName, firstname);
+		elementactions.doSendKeys(lastName, lastname);
+		elementactions.doSendKeys(jobTitle, jobtitle);
+		elementactions.doSendKeys(phone, phonenumber);
+		elementactions.moveToElement(submitContactDetails);
 	}
 
 }

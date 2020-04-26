@@ -3,8 +3,12 @@ package com.qa.hubspot.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.util.Constant;
+import com.qa.util.ElementActions;
+
 public class ProfilePage {
 	WebDriver driver;
+	ElementActions elementactions;
 
 	// Object Repository
 
@@ -17,32 +21,33 @@ public class ProfilePage {
 	// Constructor
 	public ProfilePage(WebDriver driver) {
 		this.driver = driver;
+		elementactions = new ElementActions(this.driver);
 	}
 
 	// Page Actions
 
 	public String getTitle() {
-		return driver.getTitle();
+		return elementactions.waitForPageTitle(Constant.PROFILE_PAGE_TITLE);
 	}
 
 	public String getPageHeader() {
-		return driver.findElement(header).getText();
+		return elementactions.doGetText(header);
 	}
 
 	public String getProfileName() {
-		return driver.findElement(profileName).getText();
+		return elementactions.doGetText(profileName);
 	}
 
 	public String getLanguage() {
-		return driver.findElement(language).getText();
+		return elementactions.doGetText(language);
 	}
 
 	public String getDateFormat() {
-		return driver.findElement(dateFormat).getText();
+		return elementactions.doGetText(dateFormat);
 	}
 
 	public String getPhoneNumber() {
-		return driver.findElement(phoneNumber).getAttribute("value");
+		return elementactions.getElement(phoneNumber).getAttribute("value");
 	}
 
 }
