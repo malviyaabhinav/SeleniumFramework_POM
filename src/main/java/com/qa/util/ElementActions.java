@@ -17,12 +17,12 @@ public class ElementActions {
 	}
 
 	public void waitForElementPresence(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
 	public void waitForElementClickable(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
 
@@ -66,7 +66,7 @@ public class ElementActions {
 	}
 
 	public String waitForPageTitle(String title) {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.titleContains(title));
 		return driver.getTitle();
 	}

@@ -20,15 +20,17 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.hubspot.base.BasePage;
+import com.qa.util.TakeScreenshotUtil;
 
 
 public class ExtentReportListener extends BasePage implements ITestListener {
 	
-
+	
 	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
@@ -99,17 +101,18 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-
-		try {
-			test.get().fail(result.getThrowable());
-//		  MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
-			
-		} catch (Exception e) {
+	/*	try {
+			test.get().fail(result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
+		} catch (IOException e) {
 			System.err
 					.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
 		}
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+	*/
+		
 
+		
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {

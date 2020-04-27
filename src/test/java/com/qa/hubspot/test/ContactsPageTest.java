@@ -51,8 +51,10 @@ public class ContactsPageTest {
 
 	@Test(priority = 2, dataProvider = "getTestData")
 	public void createContact(String email, String firstname, String lastname, String jobtitle, String phonenumber) {
-		contactspage.addContact(email, firstname, lastname, jobtitle, phonenumber);
-
+		int temp =contactspage.addContact(email, firstname, lastname, jobtitle, phonenumber);
+		if(temp==1) {
+			Assert.fail("Contact Already Exists");
+		}
 	}
 
 	@AfterMethod

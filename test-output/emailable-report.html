@@ -9,21 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Sanity_HubSpot_TestSuite</th></tr>
-<tr><td><a href="#t0">Sanity_Test_Cases</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">54,846</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Sanity_Test_Cases</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,990</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sanity_HubSpot_TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sanity_Test_Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.test.LoginPageTest</td><td><a href="#m0">validateTitle</a></td><td rowspan="1">1587950601462</td><td rowspan="1">20344</td></tr><tr><th colspan="4">Sanity_Test_Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.test.LoginPageTest</td><td><a href="#m1">validateLogin</a></td><td rowspan="1">1587950641047</td><td rowspan="1">7776</td></tr><tr class="passedeven"><td><a href="#m2">validateSignUpLinkDisplayed</a></td><td rowspan="1">1587950627859</td><td rowspan="1">6544</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sanity_HubSpot_TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sanity_Test_Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.test.LoginPageTest</td><td><a href="#m0">validateTitle</a></td><td rowspan="1">1588020346866</td><td rowspan="1">10851</td></tr><tr><th colspan="4">Sanity_Test_Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.test.LoginPageTest</td><td><a href="#m1">validateLogin</a></td><td rowspan="1">1588020379649</td><td rowspan="1">7773</td></tr><tr class="passedeven"><td><a href="#m2">validateSignUpLinkDisplayed</a></td><td rowspan="1">1588020366443</td><td rowspan="1">5607</td></tr></tbody>
 </table>
-<h2>Sanity_Test_Cases</h2><h3 id="m0">com.qa.hubspot.test.LoginPageTest#validateTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Loginc&quot;. Current title: &quot;HubSpot Login&quot; (tried for 20 second(s) with 500 milliseconds interval)
+<h2>Sanity_Test_Cases</h2><h3 id="m0">com.qa.hubspot.test.LoginPageTest#validateTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Loginc&quot;. Current title: &quot;HubSpot Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ENGLON146394L&apos;, ip: &apos;192.168.178.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;ENGLON146394L&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\abhinav_Kumar19\Ap...}, goog:chromeOptions: {debuggerAddress: localhost:58293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 64041d8daf85857ea8982d91cec1aa52
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\abhinav_Kumar19\Ap...}, goog:chromeOptions: {debuggerAddress: localhost:64211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6de5cd9e9b2cf1cdcf60aba763f7f965
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.qa.util.ElementActions.waitForPageTitle(ElementActions.java:70)
 	at com.qa.hubspot.pages.LoginPage.getTitle(LoginPage.java:38)
-	at com.qa.hubspot.test.LoginPageTest.validateTitle(LoginPageTest.java:30)
+	at com.qa.hubspot.test.LoginPageTest.validateTitle(LoginPageTest.java:33)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.qa.hubspot.test.LoginPageTest#validateLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

@@ -28,6 +28,8 @@ public class ContactsPage extends BasePage {
 	By submitContactDetails = By
 			.xpath("//li[@class='uiListItem private-list__item p-bottom-1']//span[text()='Create contact']");
 	By createContactPopUpHeader = By.xpath("//h3[text()='Create contact']");
+	By contactAlreadyExistsMessage = By.xpath("//div[@class='text-center m-x-6']");
+	By cancelButton = By.xpath("//button[@type='button']//span[text()='Cancel']");
 
 	// Constructor
 	public ContactsPage(WebDriver driver) {
@@ -45,14 +47,41 @@ public class ContactsPage extends BasePage {
 		return elementactions.doGetText(createContactPopUpHeader);
 	}
 
-	public void addContact(String email, String firstname, String lastname, String jobtitle, String phonenumber) {
+	public boolean checkContactExists() {
+		return elementactions.isElementDisplayed(contactAlreadyExistsMessage);
+	
+	}
+
+	public  int addContact(String email, String firstname, String lastname, String jobtitle, String phonenumber) {
 		clickOnCreateContact();
 		elementactions.doSendKeys(emailField, email);
+		
+		if(checkContactExists()) {
+			return 1;
+		}
+		else {
 		elementactions.doSendKeys(firstName, firstname);
 		elementactions.doSendKeys(lastName, lastname);
 		elementactions.doSendKeys(jobTitle, jobtitle);
 		elementactions.doSendKeys(phone, phonenumber);
 		elementactions.moveToElement(submitContactDetails);
+		return 0;
+		}
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

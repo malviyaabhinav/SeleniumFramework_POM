@@ -1,4 +1,5 @@
 package com.qa.hubspot.test;
+import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -6,8 +7,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.qa.hubspot.base.BasePage;
+import com.qa.hubspot.pages.HomePage;
 import com.qa.hubspot.pages.LoginPage;
 import com.qa.util.Constant;
+import com.qa.util.TakeScreenshotUtil;
 
 public class LoginPageTest {
 	
@@ -46,6 +49,10 @@ public class LoginPageTest {
 	
 	@AfterMethod
 	public void tearDown() {
+		/*
+		 * try { TakeScreenshotUtil.getScreenshot(driver, "Screens"); } catch
+		 * (IOException e) { // TODO Auto-generated catch block e.printStackTrace(); }
+		 */
 		driver.quit();
 	}
 	
