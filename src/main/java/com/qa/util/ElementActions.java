@@ -21,6 +21,11 @@ public class ElementActions {
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
+	public void waitForElementClickable(By locator) {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+
 	public WebElement getElement(By locator) {
 		waitForElementPresence(locator);
 		WebElement element = null;
@@ -74,9 +79,9 @@ public class ElementActions {
 			return false;
 		}
 	}
-	
+
 	public void moveToElement(By locator) {
-		action =new Actions(driver);
+		action = new Actions(driver);
 		action.moveToElement(getElement(locator)).click().build().perform();
 	}
 

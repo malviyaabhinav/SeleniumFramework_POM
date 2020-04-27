@@ -2,6 +2,10 @@
 
 <suite name="Sanity_HubSpot_TestSuite" verbose="1">
 
+	<listeners>
+		<listener class-name="com.qa.listeners.ExtentReportListener" />
+	</listeners>
+	
 	<test name="Sanity_Test_Cases">
 		<classes>
 			<class name="com.qa.hubspot.test.LoginPageTest" />
