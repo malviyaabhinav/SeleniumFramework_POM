@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Sanity_HubSpot_TestSuite" duration-ms="48990" started-at="2020-04-27T22:45:39 CEST" finished-at="2020-04-27T22:46:28 CEST">
+  <suite name="Sanity_HubSpot_TestSuite" duration-ms="54489" started-at="2020-04-30T23:19:02 CEST" finished-at="2020-04-30T23:19:56 CEST">
     <groups>
     </groups>
-    <test name="Sanity_Test_Cases" duration-ms="48990" started-at="2020-04-27T22:45:39 CEST" finished-at="2020-04-27T22:46:28 CEST">
+    <test name="Sanity_Test_Cases" duration-ms="54489" started-at="2020-04-30T23:19:02 CEST" finished-at="2020-04-30T23:19:56 CEST">
       <class name="com.qa.hubspot.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="setUp" is-config="true" duration-ms="7386" started-at="2020-04-27T22:45:39 CEST" finished-at="2020-04-27T22:45:46 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="setUp" is-config="true" duration-ms="16717" started-at="2020-04-30T23:19:02 CEST" finished-at="2020-04-30T23:19:18 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validateTitle()[pri:1, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="validateTitle" duration-ms="10851" started-at="2020-04-27T22:45:46 CEST" finished-at="2020-04-27T22:45:57 CEST">
+        <test-method status="FAIL" signature="validateTitle()[pri:1, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="validateTitle" duration-ms="10346" started-at="2020-04-30T23:19:18 CEST" finished-at="2020-04-30T23:19:29 CEST">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for title to contain "HubSpot Loginc". Current title: "HubSpot Login" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ENGLON146394L', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'ENGLON146394L', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\abhinav_Kumar19\Ap...}, goog:chromeOptions: {debuggerAddress: localhost:64211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6de5cd9e9b2cf1cdcf60aba763f7f965]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\abhinav_Kumar19\Ap...}, goog:chromeOptions: {debuggerAddress: localhost:63868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f22ffa3321515e10e723ce7df57c809a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "HubSpot Loginc". Current title: "HubSpot Login" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ENGLON146394L', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'ENGLON146394L', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\abhinav_Kumar19\Ap...}, goog:chromeOptions: {debuggerAddress: localhost:64211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6de5cd9e9b2cf1cdcf60aba763f7f965
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.113, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\abhinav_Kumar19\Ap...}, goog:chromeOptions: {debuggerAddress: localhost:63868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f22ffa3321515e10e723ce7df57c809a
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.qa.util.ElementActions.waitForPageTitle(ElementActions.java:70)
@@ -45,7 +45,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at org.testng.TestRunner$$Lambda$51.0000000012754880.accept(Unknown Source)
+at org.testng.TestRunner$$Lambda$51.00000000125CC430.accept(Unknown Source)
 at java.util.ArrayList.forEach(ArrayList.java:1257)
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
@@ -68,31 +68,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="tearDown" is-config="true" duration-ms="2120" started-at="2020-04-27T22:45:57 CEST" finished-at="2020-04-27T22:45:59 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="tearDown" is-config="true" duration-ms="1030" started-at="2020-04-30T23:19:29 CEST" finished-at="2020-04-30T23:19:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="setUp" is-config="true" duration-ms="6580" started-at="2020-04-27T22:45:59 CEST" finished-at="2020-04-27T22:46:06 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="setUp" is-config="true" duration-ms="5996" started-at="2020-04-30T23:19:30 CEST" finished-at="2020-04-30T23:19:36 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSignUpLinkDisplayed()[pri:2, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="validateSignUpLinkDisplayed" duration-ms="5607" started-at="2020-04-27T22:46:06 CEST" finished-at="2020-04-27T22:46:12 CEST">
+        <test-method status="PASS" signature="validateSignUpLinkDisplayed()[pri:2, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="validateSignUpLinkDisplayed" duration-ms="5635" started-at="2020-04-30T23:19:36 CEST" finished-at="2020-04-30T23:19:41 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSignUpLinkDisplayed -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="tearDown" is-config="true" duration-ms="1137" started-at="2020-04-27T22:46:12 CEST" finished-at="2020-04-27T22:46:13 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="tearDown" is-config="true" duration-ms="991" started-at="2020-04-30T23:19:41 CEST" finished-at="2020-04-30T23:19:42 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="setUp" is-config="true" duration-ms="6438" started-at="2020-04-27T22:46:13 CEST" finished-at="2020-04-27T22:46:19 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="setUp" is-config="true" duration-ms="5672" started-at="2020-04-30T23:19:42 CEST" finished-at="2020-04-30T23:19:48 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateLogin()[pri:3, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="validateLogin" duration-ms="7773" started-at="2020-04-27T22:46:19 CEST" finished-at="2020-04-27T22:46:27 CEST">
+        <test-method status="PASS" signature="validateLogin()[pri:3, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="validateLogin" duration-ms="7127" started-at="2020-04-30T23:19:48 CEST" finished-at="2020-04-30T23:19:55 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@dfa8ac47]" name="tearDown" is-config="true" duration-ms="991" started-at="2020-04-27T22:46:27 CEST" finished-at="2020-04-27T22:46:28 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@6107d85c]" name="tearDown" is-config="true" duration-ms="827" started-at="2020-04-30T23:19:55 CEST" finished-at="2020-04-30T23:19:56 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
