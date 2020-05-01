@@ -2,15 +2,15 @@
 
 <suite name="Regression_HubSpot_TestSuite" verbose="1">
 
-	<listeners>
+<!-- 	<listeners>
 		<listener class-name="com.qa.listeners.ExtentReportListener" />
-	</listeners>
+	</listeners> -->
 
 	<test name="HubSpot_Regression_Test_Cases">
 		<classes>
-			<class name="com.qa.hubspot.test.LoginPageTest" />
+<!-- 			<class name="com.qa.hubspot.test.LoginPageTest" />	
 			<class name="com.qa.hubspot.test.HomePageTest" />
-			<class name="com.qa.hubspot.test.ProfilePageTest" />
+			<class name="com.qa.hubspot.test.ProfilePageTest" /> 	-->
 			<class name="com.qa.hubspot.test.ContactsPageTest" />
 		</classes>
 	</test>

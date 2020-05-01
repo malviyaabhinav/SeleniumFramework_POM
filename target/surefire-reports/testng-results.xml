@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sanity_HubSpot_TestSuite" duration-ms="41076" started-at="2020-05-01T11:30:56 CEST" finished-at="2020-05-01T11:31:37 CEST">
+    <groups>
+    </groups>
+    <test name="Sanity_Test_Cases" duration-ms="41076" started-at="2020-05-01T11:30:56 CEST" finished-at="2020-05-01T11:31:37 CEST">
+      <class name="com.qa.hubspot.test.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="setUp" is-config="true" duration-ms="6644" started-at="2020-05-01T11:30:56 CEST" finished-at="2020-05-01T11:31:02 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateTitle()[pri:1, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="validateTitle" duration-ms="5498" started-at="2020-05-01T11:31:02 CEST" finished-at="2020-05-01T11:31:08 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="tearDown" is-config="true" duration-ms="1028" started-at="2020-05-01T11:31:08 CEST" finished-at="2020-05-01T11:31:09 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="setUp" is-config="true" duration-ms="5476" started-at="2020-05-01T11:31:09 CEST" finished-at="2020-05-01T11:31:14 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateSignUpLinkDisplayed()[pri:2, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="validateSignUpLinkDisplayed" duration-ms="6515" started-at="2020-05-01T11:31:14 CEST" finished-at="2020-05-01T11:31:21 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignUpLinkDisplayed -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="tearDown" is-config="true" duration-ms="926" started-at="2020-05-01T11:31:21 CEST" finished-at="2020-05-01T11:31:22 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="setUp" is-config="true" duration-ms="5139" started-at="2020-05-01T11:31:22 CEST" finished-at="2020-05-01T11:31:27 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLogin()[pri:3, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="validateLogin" duration-ms="8756" started-at="2020-05-01T11:31:27 CEST" finished-at="2020-05-01T11:31:36 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.test.LoginPageTest@9c306b92]" name="tearDown" is-config="true" duration-ms="1009" started-at="2020-05-01T11:31:36 CEST" finished-at="2020-05-01T11:31:37 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.test.LoginPageTest -->
+    </test> <!-- Sanity_Test_Cases -->
+  </suite> <!-- Sanity_HubSpot_TestSuite -->
+</testng-results>

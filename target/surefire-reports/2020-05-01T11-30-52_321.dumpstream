@@ -1,0 +1,4 @@
+# Created at 2020-05-01T11:30:53.632
+Boot Manifest-JAR contains absolute paths in classpath 'D:\OneDrive - Infosys Limited\Eclipse_Workspace\SeleniumPOMFramework\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
