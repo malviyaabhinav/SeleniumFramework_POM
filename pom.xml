@@ -25,6 +25,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/testrunners/testng_sanity.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
